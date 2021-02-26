@@ -11,7 +11,6 @@ e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
 
 #Operation Choice
 def button_click(number):
-    #e.delete(0, END)
     current = e.get()
     e.delete(0, END)
     e.insert(0, str(current) + str(number))
@@ -68,7 +67,6 @@ def button_divide():
     math = "division"
     f_num = int(first_number)
     e.delete(0, END)
-
 
 #Button Caracteristics
 button_1 = Button(root, text="1", padx=30, pady=20, command=lambda: button_click(1))
